@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UCSScanerView">
+            <connections>
+                <outlet property="leftBottom" destination="7Hp-ej-6bd" id="Cg8-2b-u0o"/>
+                <outlet property="leftUpper" destination="6nt-Yl-8wK" id="Kgu-ss-7FK"/>
+                <outlet property="rightBottom" destination="5aH-EU-ddM" id="RHQ-bZ-OhT"/>
+                <outlet property="rightUpper" destination="03n-xe-Ia2" id="w7Q-mM-2GZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="265" height="167"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="piO-UA-uVG" userLabel="ScanView">
+                    <rect key="frame" x="3" y="3" width="259" height="161"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6nt-Yl-8wK" userLabel="LeftUpper">
+                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="6nt-Yl-8wK" secondAttribute="height" multiplier="1:1" id="byg-zi-bVs"/>
+                        <constraint firstAttribute="width" constant="20" id="jBg-6S-oJB"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="03n-xe-Ia2" userLabel="RightUpper">
+                    <rect key="frame" x="245" y="0.0" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="03n-xe-Ia2" secondAttribute="height" multiplier="1:1" id="U43-oP-b3d"/>
+                        <constraint firstAttribute="width" constant="20" id="pDv-cL-oo4"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Hp-ej-6bd" userLabel="LeftBottom">
+                    <rect key="frame" x="0.0" y="147" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="ae0-7K-KRD"/>
+                        <constraint firstAttribute="width" secondItem="7Hp-ej-6bd" secondAttribute="height" multiplier="1:1" id="uEX-U0-Ywg"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5aH-EU-ddM" userLabel="RightBottom">
+                    <rect key="frame" x="245" y="147" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="5aH-EU-ddM" secondAttribute="height" multiplier="1:1" id="8fs-9c-m1V"/>
+                        <constraint firstAttribute="width" constant="20" id="WVj-DC-6sL"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="6nt-Yl-8wK" firstAttribute="top" secondItem="piO-UA-uVG" secondAttribute="top" constant="-3" id="5Un-pu-tdW"/>
+                <constraint firstItem="03n-xe-Ia2" firstAttribute="top" secondItem="piO-UA-uVG" secondAttribute="top" constant="-3" id="9Gc-ch-xTq"/>
+                <constraint firstItem="piO-UA-uVG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="Acf-gL-1Oq"/>
+                <constraint firstItem="piO-UA-uVG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="3" id="CL6-Cx-bcU"/>
+                <constraint firstItem="7Hp-ej-6bd" firstAttribute="leading" secondItem="piO-UA-uVG" secondAttribute="leading" constant="-3" id="JPI-wn-pby"/>
+                <constraint firstItem="6nt-Yl-8wK" firstAttribute="leading" secondItem="piO-UA-uVG" secondAttribute="leading" constant="-3" id="JYR-Qu-wnY"/>
+                <constraint firstAttribute="bottom" secondItem="piO-UA-uVG" secondAttribute="bottom" constant="3" id="ScY-9G-B9U"/>
+                <constraint firstItem="03n-xe-Ia2" firstAttribute="trailing" secondItem="piO-UA-uVG" secondAttribute="trailing" constant="3" id="Upa-V1-UdW"/>
+                <constraint firstItem="5aH-EU-ddM" firstAttribute="bottom" secondItem="piO-UA-uVG" secondAttribute="bottom" constant="3" id="VZ0-J2-DGz"/>
+                <constraint firstItem="5aH-EU-ddM" firstAttribute="trailing" secondItem="piO-UA-uVG" secondAttribute="trailing" constant="3" id="aOm-9K-rHf"/>
+                <constraint firstAttribute="trailing" secondItem="piO-UA-uVG" secondAttribute="trailing" constant="3" id="hBf-no-ANu"/>
+                <constraint firstItem="7Hp-ej-6bd" firstAttribute="bottom" secondItem="piO-UA-uVG" secondAttribute="bottom" constant="3" id="hkc-Uw-HQG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-374" y="-358"/>
+        </view>
+    </objects>
+</document>
